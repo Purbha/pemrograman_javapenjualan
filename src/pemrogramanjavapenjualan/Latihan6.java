@@ -249,8 +249,8 @@ public class Latihan6 extends javax.swing.JFrame {
             
             //=========================SQL Update=========================================//
             String SQL = "UPDATE barang SET ";
-            SQL += "brg_nama = '" + Nama_Barang  + "', ";
-            SQL += "brg_harga = '" + Harga  + "', ";
+            SQL += "brg_nama = '" + Nama_Barang  + "', ";   //1
+            SQL += "brg_harga = '" + Harga  + "', ";        //2
             SQL += "brg_stok = '" + Stok  + "', ";
             SQL += "brg_kategori = '" + Kategori  + "', ";
             SQL += "brg_garansi = '" + Garansi  + "', ";

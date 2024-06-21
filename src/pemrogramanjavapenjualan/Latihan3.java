@@ -96,7 +96,7 @@ public class Latihan3 extends javax.swing.JFrame {
         // TODO add your handling code here:
         try {
             String Kode_Barang = jTextField_Kode.getText();
-            String SQL = "SELECT * FROM barang WHERE kdbrg = '" + Kode_Barang + "'" ;
+            String SQL = "SELECT * FROM barang WHERE kdbrg = '" + Kode_Barang + "'" ;            
             String Pesan1 = "Data ditemukan.";
             String Pesan2 = "Data tidak ditemukan.";
             Connection Conn; Statement Stmt; ResultSet RS;

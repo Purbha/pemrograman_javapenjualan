@@ -63,8 +63,8 @@ public class Latihan2 extends javax.swing.JFrame {
 
     private void jButton_TampilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_TampilActionPerformed
         // TODO add your handling code here:
-        String DB_Username = "dbjual";
-        String DB_Password = "dbjual";
+        String DB_Username = "root";
+        String DB_Password = "";
         String DB_Koneksi = "jdbc:mysql://localhost/dbjual";
         String SQL = "SELECT * FROM barang";
         String Pesan;
@@ -72,9 +72,9 @@ public class Latihan2 extends javax.swing.JFrame {
         Connection Conn;
         Statement Stmt;
         ResultSet RS;
-        try {
+        try {         
             Conn = (Connection) DriverManager.getConnection(DB_Koneksi,
-                    DB_Username, DB_Password);
+                  DB_Username, DB_Password);
             Stmt = Conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,
                     ResultSet.CONCUR_READ_ONLY);
             RS = Stmt.executeQuery(SQL);
